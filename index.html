@@ -55,11 +55,9 @@
     <img src="img/Batman_DC_Comics-3.png" alt="Batman">
     <div id="countdown"></div>
     <script>
-        const targetDate = new Date(2025,3,27,12);
-        targetDate.setHours(0, 0, 0, 0);
+        const targetDate = new Date(new Date("2025-04-27T00:00:00+01:00").toLocaleString("en-US", { timeZone: "Europe/Prague" }))
         document.addEventListener("DOMContentLoaded", function() {
             
-
             setInterval(updateCountdown, 1000);
             updateCountdown();
         });
